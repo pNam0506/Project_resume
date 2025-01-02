@@ -1,4 +1,150 @@
+body{
+    background-color: #F5F6F1
+    ;
+}
+.Projects{
+    height: 500px;
+    width: 700px;
+    background-image: url('./lcd.png');
+    background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    margin-left: 45%;
+    margin-top: 5%;
+}
+.Projects h2{
+    margin-left: 45% ;
+}
+.all-project{
+    margin-left: 25%;
+}
+.all-project .emergency{
+    height: 150px;
+    width: 150px;
+}
+.all-project .emergency #save_money {
+    height: 50px;
+    margin-left: 30%;
+    
+}
+.all-project .emergency #Emer {
+    margin-left: 10%;
+    margin-top: -1px;
+    
+}
+.all-project .emergency #Pic {
+    margin-left: 25%;
+    margin-top: -1px;
+}
+.all-project .emergency #chat {
+    margin-left: 30%;
+    margin-top: -1px;
+}
+.Projects .all-project {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); /* 3 คอลัมน์เริ่มต้น */
+    height: 200px;
+    grid-template-rows: 100px;
+    
+}
+/* สำหรับจอเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .Projects{
+        height: 700px;
+        width: 600px;
+        background-image: url('./tablet.png');
+        background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .Projects h2{
+        margin-left: 43% ;
+        margin-top: 25%;
+    }
+    .Projects .all-project {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 100px);
+        margin-left: 26%;
+    
+       
+    }
+}
 
-.all-project #emergency #save_money {
-    height: 100px;
+/* สำหรับจอเล็กมาก (มือถือแนวตั้ง) */
+@media (max-width: 480px) {
+  
+    .Projects{
+        height: 700px;
+        width: 700px;
+        background-image: url('./mobile.png');
+        background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .Projects h2{
+        margin-left: 45% ;
+        margin-top: 25%;
+    }
+    .Projects .all-project {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 100px);
+        margin-left: 30%;
+    
+       
+    }
+}
+.document .all-project {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); /* 3 คอลัมน์เริ่มต้น */
+    grid-template-rows: 150px;
+    
+}
+
+
+/* สำหรับจอเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .document .all-project {
+        grid-template-columns: repeat(2, 150px); /* 2 คอลัมน์ */
+        grid-template-rows: 150px;
+    }
+}
+
+/* สำหรับจอเล็กมาก (มือถือแนวตั้ง) */
+@media (max-width: 480px) {
+    .document .all-project {
+        grid-template-columns: 150px; /* 1 คอลัมน์ */
+        grid-template-rows: 150px;
+    }
+}
+
+
+.document{
+    background-color: antiquewhite;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+.All{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 คอลัมน์เริ่มต้น */
+    margin-left: 10%;
+    height: 200px;
+}
+/* สำหรับจอเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .All {
+        grid-template-columns: repeat(1, 1fr); /* 2 คอลัมน์ */
+    }
+}
+
+/* สำหรับจอเล็กมาก (มือถือแนวตั้ง) */
+@media (max-width: 480px) {
+    .All {
+        grid-template-columns: 1fr; /* 1 คอลัมน์ */
+    }
 }
