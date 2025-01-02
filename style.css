@@ -4,7 +4,7 @@ body{
 }
 .Projects{
     height: 500px;
-    width: 700px;
+    width: 500px;
     background-image: url('./lcd.png');
     background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
     background-position: center;
@@ -52,22 +52,26 @@ h1{
 }
 /* สำหรับจอเล็ก (มือถือ) */
 @media (max-width: 768px) {
+    h1{
+        margin-left: 40%;
+        margin-top: 5%;
+    }
     .Projects{
-        height: 700px;
-        width: 600px;
-        background-image: url('./tablet.png');
+
+        background-image: url('./lcd.png');
         background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
         background-position: center;
         background-repeat: no-repeat;
+        margin-left: -60px;
     }
     .Projects h2{
         margin-left: 43% ;
-        margin-top: 25%;
+        margin-top: 50px;
     }
     .Projects .all-project {
         grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(3, 100px);
-        margin-left: 26%;
+        margin-left: 30%;
     
        
     }
@@ -79,26 +83,27 @@ h1{
     #name{
       
         width: 500px;
-        margin-left: 40%;
+        margin-left: -5%;
         margin-top: 5%;
     }
   
     .Projects{
-        height: 800px;
-        width: 900px;
-        background-image: url('./mobile.png');
+        height: 500px;
+        width: 600px;
+        background-image: url('./lcd.png');
         background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
         background-position: center;
         background-repeat: no-repeat;
+       
     }
     .Projects h2{
-        margin-left: 45% ;
-        margin-top: 25%;
+        margin-left: 43% ;
+        margin-top: 6%;
     }
     .Projects .all-project {
         grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(3, 100px);
-        margin-left: 30%;
+        margin-left: 27%;
     
        
     }
