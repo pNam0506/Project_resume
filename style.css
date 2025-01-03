@@ -1,6 +1,7 @@
 body{
-    background-color: #F5F6F1
-    ;
+    background-color: #F5F6F1;
+    height: 100%;
+    width: 100%;
 }
 .Projects{
     height: 500px;
@@ -17,6 +18,7 @@ h1{
 }
 .Projects h2{
     margin-left: 45% ;
+    margin-top: 50px;
 }
 .all-project{
     margin-left: 25%;
@@ -50,6 +52,46 @@ h1{
     grid-template-rows: 100px;
     
 }
+.all-project .book-1 #book{
+    height: 100px;
+    width: 100px;
+    margin-top: -70px;
+}
+.all-project .book-1 #b1{
+    margin-left: 45px;
+}
+.all-project .book-1 #t1{
+    background-color: aliceblue;
+    height: 20px;
+    margin-top: -15px;
+    margin-left: -30px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+.all-project .book-2 #b2{
+    margin-left: 35px;
+}
+.all-project .book-2 #t2{
+    background-color: aliceblue;
+    height: 20px;
+    margin-top: -15px;
+    margin-left: -70px;
+    margin-right: 80px;
+    border-radius: 20px;
+}
+
+.all-project .book-2 #book{
+    height: 100px;
+    width: 100px;
+    margin-top: 111px;
+    margin-left: -50px;
+}
+
+
+.document #db{
+    margin-left: 300px;
+}
+
 /* สำหรับจอเล็ก (มือถือ) */
 @media (max-width: 768px) {
     h1{
@@ -134,16 +176,23 @@ h1{
 
 
 .document{
-    background-color: antiquewhite;
+    
     height: 400px;
     width: 400px;
+    background-image: url('./bookcase.png');
+    background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -2;
+   
+
 }
 
 
 
 .All{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 คอลัมน์เริ่มต้น */
+    grid-template-columns: repeat(2, 1fr); 
     margin-left: 10%;
     height: 200px;
 }
@@ -159,4 +208,51 @@ h1{
     .All {
         grid-template-columns: 1fr; /* 1 คอลัมน์ */
     }
+}
+.Projects .table #desk{
+    margin-top: 10px;
+    height: 700px;
+    width: 1200px;
+    position: absolute; /* หรือ relative / fixed */
+    z-index: -2; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+
+}
+
+.Projects .floor #wood{
+    margin-top: 520px;
+    margin-left: -155px;
+    height: 50%;
+    width: 100%;
+    position: absolute; /* หรือ relative / fixed */
+    z-index: -3; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+
+}
+
+.Projects .plant #plantd{
+    margin-top: -70px;
+    margin-left: 500px;
+    height: 200px;
+    position: absolute; /* หรือ relative / fixed */
+    z-index: -1; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+
+}
+
+.Projects .window #windowd{
+    margin-top: -400px;
+    margin-left: -70px;
+    height: 500px;
+    width: 400px;
+    position: absolute; /* หรือ relative / fixed */
+    z-index: -1; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+
+}
+
+.Projects .cat #catd{
+    margin-top: -30px;
+    margin-left: 700px;
+    height: 200px;
+    width: 200px;
+    position: absolute; /* หรือ relative / fixed */
+    z-index: -1; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+    /* transform: scaleX(-1); พลิกให้หันไปอีกทาง */
 }
