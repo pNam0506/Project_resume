@@ -226,29 +226,66 @@ h1{
     #name{
       
         width: 500px;
-        margin-left: -5%;
         margin-top: 5%;
     }
   
     .Projects{
-        height: 500px;
-        width: 600px;
+
         background-image: url('./lcd.png');
         background-size: contain; /* ปรับขนาดให้พอดีโดยคงอัตราส่วน */
         background-position: center;
         background-repeat: no-repeat;
-       
+        margin-left: 0.5px;
+        margin-top: 1px;
     }
     .Projects h2{
         margin-left: 43% ;
-        margin-top: 6%;
+        margin-top: 50px;
     }
     .Projects .all-project {
         grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(3, 100px);
-        margin-left: 27%;
+        margin-left: 20%;
     
        
+    }
+    .window #windowd{
+        display: none;
+    }
+    .Projects .floor #wood{
+        margin-top: 520px;
+        margin-left: -200px;
+        height: 50%;
+        width: 50pc;
+        position: absolute; /* หรือ relative / fixed */
+        z-index: -3; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+    
+    }
+    .Projects .cat #catd{
+        margin-top: -10px;
+        margin-left: 350px;
+        height: 200px;
+        width: 200px;
+        position: absolute; /* หรือ relative / fixed */
+        z-index: +1; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+        /* transform: scaleX(-1); พลิกให้หันไปอีกทาง */
+    }
+    .Projects .table #desk{
+        margin-top: 10px;
+        height: 700px;
+        width: 700px;
+        margin-left: -100px;
+        position: absolute; /* หรือ relative / fixed */
+        z-index: -2; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+    
+    }
+    .Projects .plant #plantd{
+        margin-top: -70px;
+        margin-left: -50px;
+        height: 200px;
+        position: absolute; /* หรือ relative / fixed */
+        z-index: -1; /* ค่า -1 ทำให้ element อยู่ด้านหลัง */
+    
     }
 }
 
@@ -281,6 +318,9 @@ h1{
 
 /* สำหรับจอเล็กมาก (มือถือแนวตั้ง) */
 @media (max-width: 480px) {
+    .document{
+        margin-left: -450px;
+    }
     .document .all-book {
         grid-template-columns: repeat(2, 150px); /* 2 คอลัมน์ */
         grid-template-rows: 150px;
